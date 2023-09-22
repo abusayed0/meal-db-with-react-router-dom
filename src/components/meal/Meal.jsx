@@ -1,6 +1,5 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
 const Meal = ({ meal, category }) => {
     // console.log(meal);
     const { strMealThumb, strMeal, idMeal } = meal;
@@ -15,5 +14,8 @@ const Meal = ({ meal, category }) => {
         </div>
     );
 };
-
+Meal.propTypes = {
+    meal : PropTypes.object.isRequired,
+    category : PropTypes.string.isRequired
+};
 export default Meal;
