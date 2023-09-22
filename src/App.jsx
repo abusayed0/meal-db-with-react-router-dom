@@ -7,9 +7,11 @@ function App() {
   
 
   return (
-    <div className="max-w-[1440px] mx-auto px-2 md:px-6 lg:px-20">
+    <div className="flex justify-center">
+      <div className="max-w-[1440px] mx-2 md:mx-5 lg:mx-16">
       <RouterProvider router={router}>
     </RouterProvider>
+    </div>
     </div>
   )
 }
